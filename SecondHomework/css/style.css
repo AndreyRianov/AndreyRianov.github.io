@@ -1,0 +1,65 @@
+body {
+  background-color: #F5F7EE;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-family: Roboto, serif;
+  }
+
+p {
+  color: gray;
+}
+
+.container {
+  margin-left: 262px;
+}
+
+.header {
+  margin: 42px 0 7px 0;
+}
+
+.header .img {
+  margin-left: 150px;
+  border: 1px solid black;
+}
+
+.because, .main, .footer, .comment {
+  width: 500px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.because h3 {
+  margin-top: 14px;
+}
+
+.because ul {
+  padding-left: 36px;
+}
+
+.because li {
+  line-height: 18px;
+}
+
+.main a {
+  font-style: italic;
+  padding-left: 36px;
+  font-size: 13px;
+}
+
+.main h3 {
+  font-size: 17.9px;
+  margin: 0;
+  }
+
+.main p {
+    font-size: 14px;
+    padding: 7px 0 0 38px;
+}
+
+#profile {
+  padding-top: 0px;
+}
