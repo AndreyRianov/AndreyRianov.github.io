@@ -1,17 +1,15 @@
 body {
     font-family: "Open Sans", sans-serif;
-  }
-
-  * {
     margin: 0;
-    padding: 0:
+    padding: 0;
+    width: 1363px;
   }
 
 .container {
-    padding: 45px 0 0 195px;
-    width: 1363px;
-}
-.container h1 {
+    padding: 5% 0 0 15%;
+    }
+
+h1{
     font-size: 50px;
 }
 .positions {
@@ -21,7 +19,7 @@ body {
 }
 
 .positions ul {
-  font-size: 0px;
+  font-size: 0;
 }
 
 .positions li {
