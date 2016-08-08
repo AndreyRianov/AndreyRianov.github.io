@@ -1,14 +1,14 @@
-body {
-    width: 1215px;
-    height: 1064px;
-    font-family: "Helvetica Neue", sans-serif;
-}
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('HelveticaNeue.eot');
     src: url('HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('HelveticaNeue.woff') format('woff'), url('HelveticaNeue.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+body {
+    width: 1215px;
+    height: 1064px;
+    font-family: "Helvetica Neue", sans-serif;
 }
 .menu {
     height: 36px;
@@ -80,7 +80,6 @@ h3 {
     white-space: nowrap;
     text-align: center;
     color: rgba(255, 255, 255, .2);
-
 }
 h3:before, h3:after {
     content: "";
@@ -93,23 +92,33 @@ h3:before, h3:after {
     background-clip: content-box;
     border-top: 1px solid rgba(255, 255, 255, .2);
 }
-
-
 .forms input {
-  padding: 8px 100px 8px 15px;
-  }
-
+    padding: 8px 100px 8px 15px;
+}
 .forms input:focus {
-  box-shadow: 0 0 10px 6px rgba(67,138,43,1)
+    box-shadow: 0 0 10px 6px rgb(67, 138, 43)
 }
-
-.chkbx label{
-  color: rgba(255, 255, 255, .5);
+.chkbx label {
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, .7);
 }
-
 .chkbx input[type="checkbox"] {
-  height: 16px;
-  width: 16px;
-  margin:-2px 4px 0 0;
-  vertical-align:middle;
+    height: 16px;
+    width: 16px;
+    margin: -2px 4px 0 0;
+    vertical-align: middle;
+}
+.sbmt button {
+    padding: 8px 17px;
+    background-color: #0025D0;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.foot {
+    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+    font-size: 70%;
 }
