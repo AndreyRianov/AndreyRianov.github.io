@@ -96,6 +96,7 @@ h3:before, h3:after {
     padding: 8px 100px 8px 15px;
     background-color: #100e0f;
     border: 0;
+    color: #fff;
 }
 .forms input:focus {
     box-shadow: 0 0 10px 3px rgb(67, 138, 43);
