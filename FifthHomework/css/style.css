@@ -5,6 +5,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
+span {
+  font-family: serif;
+}
+
 body {
     width: 1215px;
     height: 1064px;
