@@ -1,0 +1,74 @@
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(OpenSans-Light-cyr.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(OpenSans-Light-lat.woff2) format('woff2');
+  }
+
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(OpenSans-cyr.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(OpenSans-lat.woff2) format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(OpenSans-Bold-cyr.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(OpenSans-Bold-lat.woff2) format('woff2');
+}
+
+
+
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(OpenSans-Extrabold-cyr.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(OpenSans-Extrabold-lat.woff2) format('woff2');
+}
+
+
+@font-face {
+  font-family: 'LeagueGothicRegular';
+  src: url("league_gothic.otf-webfont.eot");
+  src: url("league_gothic.otf-webfont.eot?#iefix") format("embedded-opentype"), url("league_gothic.otf-webfont.woff") format("woff"), url("league_gothic.otf-webfont.ttf") format("truetype"), url("league_gothic.otf-webfont.svg#LeagueGothicRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
