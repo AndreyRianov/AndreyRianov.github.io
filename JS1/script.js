@@ -1,3 +1,4 @@
+function init(){
 function pow(x, n) {
   var result = x;
   for (var i = 1; i < n; i++) {
@@ -40,3 +41,7 @@ for (var i = 0; i < 5; i++) {
 if ( i>=5 ){
 	alert('Ошибка');
 }
+
+}
+
+window.onload = init;
