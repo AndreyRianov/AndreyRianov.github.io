@@ -42,6 +42,7 @@ if ( i>=5 ){
 	alert('Ошибка');
 }
 
+
 }
 
 window.onload = init;
