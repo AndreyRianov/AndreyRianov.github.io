@@ -1,0 +1,34 @@
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-family: sans-serif;
+    padding-left: 5vw;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+    font-size: 3vw;
+}
+.question {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.question__title {
+    font-size: 3vw;
+    margin: 1vw 0;
+}
+label {
+    margin-left: 3vw;
+    font-size: 2vw;
+}
+.question__button {
+    width: 30vw;
+    height: 8vw;
+    margin: 4vw 0 0 0;
+    align-self: center;
+    font-size: 2vw;
+}
