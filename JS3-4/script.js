@@ -21,12 +21,13 @@ function init() {
     }
 
     function createCheckBox(name, title) {
-        var magic = !!document.releaseCapture;
-        var creating = document.createElement(magic ? ['<input name="', name, '" />'].join('') : 'input');
-        if (!magic) creating.name = name;
-        creating.type = 'checkbox';
+        var checkbox = document.createElement('input');
+        checkbox.type = "checkbox";
+        checkbox.name = name;
+        checkbox.value = "value";
+        checkbox.id = "id";
         var label = document.createElement('label');
-        label.appendChild(creating);
+        label.appendChild(checkbox);
         label.appendChild(document.createTextNode(title));
         return label;
     }
@@ -38,24 +39,6 @@ function init() {
     button.name = "question__button";
     button.onclick = function() {
         alert('Try again');
-    };
-
-    var question__obj = {
-        "question_1": {
-            "Вариан ответа №1": {},
-            "Вариан ответа №2": {},
-            "Вариан ответа №3": {}
-        },
-        "question_2": {
-            "Вариан ответа №1": {},
-            "Вариан ответа №2": {},
-            "Вариан ответа №3": {}
-        },
-        "question_3": {
-            "Вариан ответа №1": {},
-            "Вариан ответа №2": {},
-            "Вариан ответа №3": {}
-        }
     };
 
     for (var i = 0; i < 3; i++) {
@@ -72,6 +55,8 @@ function init() {
     }
 
     question.appendChild(button);
+
+
 
 }
 
