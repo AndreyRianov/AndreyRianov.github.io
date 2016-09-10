@@ -12,48 +12,64 @@ function init() {
     question.className = 'question';
     wrapper.insertBefore(question, wrapper.children[2]);
 
-    function crQuestionTitle(text, className, position) {
-        var t = document.createElement('p');
-        t.className = className;
-        t.innerHTML = text;
-        question.insertBefore(t, question.children[position]);
-        return t;
+    function createQuestionTitle(text, position) {
+        var title = document.createElement('p');
+        title.className = 'question__title';
+        title.innerHTML = text;
+        question.insertBefore(title, question.children[position]);
+        return title;
     }
 
-    function crCheckBox(name, title) {
-        var ie = !!document.releaseCapture;
-        var c = document.createElement(ie ? ['<input name="', name, '" />'].join('') : 'input');
-        if (!ie) c.name = name;
-        c.type = 'checkbox';
-        var l = document.createElement('label');
-        l.appendChild(c);
-        l.appendChild(document.createTextNode(title));
-        return l;
+    function createCheckBox(name, title) {
+        var magic = !!document.releaseCapture;
+        var creating = document.createElement(magic ? ['<input name="', name, '" />'].join('') : 'input');
+        if (!magic) creating.name = name;
+        creating.type = 'checkbox';
+        var label = document.createElement('label');
+        label.appendChild(creating);
+        label.appendChild(document.createTextNode(title));
+        return label;
     }
-
-
 
     var button = document.createElement('button');
     button.type = 'submit';
     button.className = 'question__button';
     button.innerHTML = "Проверить мои результаты";
     button.name = "question__button";
-    button.onclick = function() {alert( 'Try again' );};
+    button.onclick = function() {
+        alert('Try again');
+    };
 
+    var question__obj = {
+        "question_1": {
+            "Вариан ответа №1": {},
+            "Вариан ответа №2": {},
+            "Вариан ответа №3": {}
+        },
+        "question_2": {
+            "Вариан ответа №1": {},
+            "Вариан ответа №2": {},
+            "Вариан ответа №3": {}
+        },
+        "question_3": {
+            "Вариан ответа №1": {},
+            "Вариан ответа №2": {},
+            "Вариан ответа №3": {}
+        }
+    };
 
-    question.appendChild(crCheckBox('question_1', 'Вариант ответа №1'));
-    question.appendChild(crCheckBox('question_2', 'Вариант ответа №2'));
-    question.appendChild(crCheckBox('question_3', 'Вариант ответа №3'));
-    question.appendChild(crCheckBox('question_4', 'Вариант ответа №1'));
-    question.appendChild(crCheckBox('question_5', 'Вариант ответа №2'));
-    question.appendChild(crCheckBox('question_6', 'Вариант ответа №3'));
-    question.appendChild(crCheckBox('question_7', 'Вариант ответа №1'));
-    question.appendChild(crCheckBox('question_8', 'Вариант ответа №2'));
-    question.appendChild(crCheckBox('question_9', 'Вариант ответа №3'));
+    for (var i = 0; i < 3; i++) {
+        for (var j = 0; j < 3; j++) {
+            question.appendChild(createCheckBox('question_' + (i + 1), 'Вариант ответа №' + (j + 1)));
+        }
+    }
 
-    crQuestionTitle('Вопрос №1', 'question__title', 0);
-    crQuestionTitle('Вопрос №2', 'question__title', 4);
-    crQuestionTitle('Вопрос №3', 'question__title', 8);
+    var count = 0;
+
+    for (var k = 0; k < 3; k++) {
+        createQuestionTitle('Вопрос №' + (k + 1), count);
+        count += 4;
+    }
 
     question.appendChild(button);
 
